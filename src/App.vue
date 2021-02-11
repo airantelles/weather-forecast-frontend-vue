@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+      <img src="./assets/logo.png" heigth="40" width="40"/>
+      <a class="navbar-brand ml-3" href="#">Previsão do tempo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <Forecast/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Forecast from './components/Forecast.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Forecast
   }
 }
 </script>
